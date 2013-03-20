@@ -2,7 +2,7 @@ bulk-usenet
 ===========
 description:
 ------------
-just a simple bash script for mass uploading to usenet, probably a better way out there, but hey it works.
+just a simple bash script for mass uploading to usenet with newsmangler, probably a better way out there, but hey it works.
 
 
 Requirements:
