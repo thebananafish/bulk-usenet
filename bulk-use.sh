@@ -1,7 +1,8 @@
 #!/bin/bash
 #now we are getting fancy!
 #Posting to usenet script
-#this script takes every directory in a directory, rars them, pars them and then posts to usenet.  It is a little messy, but hey it works.
+#this script takes every directory in a directory, rars them, pars them and then posts to usenet.  
+#It is a little messy, but hey it works.
 
 ### ask for stuff                   
 echo "are we posting [f]iles or [d]irectories"
