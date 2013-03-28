@@ -16,7 +16,7 @@ How this works:
 ---------------
 1.  clone into this project and modify the location of newsmangler
 2.  chmod +x bulk-use.sh
-3.  go into the directory with the directories you would like to post.
+3.  go into the directory with the files or sub-directories you would like to post.
 4.  ./bulk-use.sh
 
 
