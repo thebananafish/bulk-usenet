@@ -14,7 +14,7 @@ if [ "$gotrar" = "" ];
 		exit0
 fi
 
-if [ "gotpar" = "" ];
+if [ "$gotpar" = "" ];
 	then
 		echo "Par2 was not found, debian? apt-get install par2"
 		exit0
