@@ -4,6 +4,22 @@
 #this script takes every directory in a directory, rars them, pars them and then posts to usenet.  
 #It is a little messy, but hey it works.
 
+###check if proper programs are installed
+gotrar=(which rar)
+gotpar=(which par2create)
+
+if [ "$gotrar" = "" ];
+	then
+		echo "Rar was not found, debian? add non-free repo and apt-get install rar"
+		exit0
+fi
+
+if [ "gotpar" = "" ];
+	then
+		echo "Par2 was not found, debian? apt-get install par2"
+		exit0
+fi
+
 ### ask for stuff                   
 echo "are we posting [f]iles or [d]irectories"
 read method
