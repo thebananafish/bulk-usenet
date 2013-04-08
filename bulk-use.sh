@@ -36,7 +36,7 @@ if [ "$method" = 'f' ]
 		read file_ext
 		for file in ./*.$file_ext; do
 		rar a "$file".rar -v15m -m0 "$file"
-		par2create -r10 -n7 "$file" $file*.rar
+		par2create -r10 -n7 "$file" "$file*.rar"
 		#ok this is weird but required to make the folder right
 		file2="${file:2}"
 		mkdir "$prefix $file2"
@@ -55,7 +55,7 @@ if [ "$method" = 'd' ]
 		do
 	        base=$(basename "$dir")
         	rar a "${base}" -v15m -m0 "$dir"
-        	par2create -r10 -n7 "${base}" ${base}*.rar
+        	par2create -r10 -n7 "${base}" "${base}*.rar"
         	mkdir "$prefix $dir"
 		mv "${base}".* "$prefix $dir"
 		python /home/nick/newsmangler/mangler.py "$prefix $dir"
