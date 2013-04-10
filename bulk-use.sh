@@ -25,8 +25,6 @@ echo "are we posting [f]iles or [d]irectories"
 read method
 echo "please enter a prefix for posting:"
 read prefix
-echo "do you want to cleanup after we are posting? [Y] or [N]"
-read clean
 ###
 #####
 #method for posting files
@@ -62,9 +60,3 @@ if [ "$method" = 'd' ]
 		echo "$prefix $dir has been posted!"
 		done
 fi
-
-if [ "$clean" = 'y' ]
-		then
-		rm -r "$prefix *"
-fi
-
